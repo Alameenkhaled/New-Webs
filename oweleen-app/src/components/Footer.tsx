@@ -1,35 +1,115 @@
-'use client';
-import React, { useState } from 'react';
-import NewsletterModal from './NewsletterModal';
+import React from "react";
 
-const Footer = () => {
-  const [showModal, setShowModal] = useState(false);
-
+export const Footer = () => {
   return (
-    <>
-      <footer className="w-full border-t border-gray-200/80 bg-white">
-        <div className="container mx-auto px-4 pt-16 pb-12 text-center md:px-6 md:pt-24 md:pb-16">
-          <div className="mx-auto max-w-3xl">
-            <h2 className="text-4xl font-black leading-tight tracking-[-0.033em] text-text-light md:text-5xl">Creating a Community for Investors.</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-base font-normal leading-normal text-muted-light">Join a vibrant ecosystem of innovators and investors, all dedicated to pushing the boundaries of what's possible. Oweleen is more than a platform; it's a community where ideas flourish and opportunities are born.</p>
-          </div>
-          <button onClick={() => setShowModal(true)} className="mt-8 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 mx-auto bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90">
-            <span className="truncate">ENTER THE MARKETPLACE</span>
-          </button>
-        </div>
-        <div className="container mx-auto border-t border-gray-200/80 px-4 py-6 md:px-6">
-          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
-            <p className="text-sm text-muted-light">© 2024 Oweleen. All rights reserved.</p>
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-              <a className="text-sm text-muted-light hover:text-primary" href="/legal">Legal &amp; Terms</a>
-              <span className="text-sm text-muted-light">Made by <a className="font-medium text-text-light hover:text-primary" href="#">Oweleen Team</a></span>
+    <footer className="py-20 px-4 sm:px-6 lg:px-8 bg-[#10142A] dark:bg-[#10142A]">
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-white">
+          Ready to Transform Your{" "}
+          <span className="text-primary">Real Estate Business?</span>
+        </h2>
+        <p className="mt-4 max-w-3xl mx-auto text-gray-400">
+          Schedule a complimentary 30-minute strategy session to identify your
+          biggest opportunities for AI and blockchain transformation.
+        </p>
+        <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div>
+            <div className="w-16 h-16 mx-auto rounded-full border-2 border-blue-500 flex items-center justify-center">
+              <span className="material-icons-outlined text-blue-500 text-3xl">
+                schedule
+              </span>
             </div>
+            <h4 className="mt-4 font-bold text-white">No Obligation</h4>
+            <p className="text-sm text-gray-400">
+              Free consultation with no commitment
+            </p>
+          </div>
+          <div>
+            <div className="w-16 h-16 mx-auto rounded-full border-2 border-purple-500 flex items-center justify-center">
+              <span className="material-icons-outlined text-purple-500 text-3xl">
+                checklist
+              </span>
+            </div>
+            <h4 className="mt-4 font-bold text-white">Actionable Insights</h4>
+            <p className="text-sm text-gray-400">
+              Leave with 3-5 specific recommendations
+            </p>
+          </div>
+          <div>
+            <div className="w-16 h-16 mx-auto rounded-full border-2 border-green-500 flex items-center justify-center">
+              <span className="material-icons-outlined text-green-500 text-3xl">
+                flash_on
+              </span>
+            </div>
+            <h4 className="mt-4 font-bold text-white">Proven Results</h4>
+            <p className="text-sm text-gray-400">267% average ROI for clients</p>
+          </div>
+          <div>
+            <div className="w-16 h-16 mx-auto rounded-full border-2 border-yellow-500 flex items-center justify-center">
+              <span className="material-icons-outlined text-yellow-500 text-3xl">
+                military_tech
+              </span>
+            </div>
+            <h4 className="mt-4 font-bold text-white">Proven Expertise</h4>
+            <p className="text-sm text-gray-400">
+              Led Dubai's proptech initiative
+            </p>
           </div>
         </div>
-      </footer>
-      <NewsletterModal showModal={showModal} setShowModal={setShowModal} />
-    </>
+        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            className="bg-primary text-gray-900 px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            href="#"
+          >
+            Book Free Strategy Session
+          </a>
+          <a
+            className="bg-gray-700/50 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-600/50 transition-colors"
+            href="#"
+          >
+            Email Directly
+          </a>
+        </div>
+        <div className="mt-20 border-t border-gray-800 pt-8">
+          <p className="text-2xl font-bold text-white">Al Ameen Al Majali</p>
+          <p className="text-gray-400">
+            Digital Transformation Expert | AI & Blockchain Real Estate
+          </p>
+          <div className="flex justify-center space-x-6 mt-4 text-gray-400">
+            <a className="hover:text-primary" href="#">
+              <svg
+                aria-hidden="true"
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  clipRule="evenodd"
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.286 2.73 7.91 6.502 9.234.48.09.654-.21.654-.467 0-.23-.008-.84-.012-1.64-2.65.575-3.21-1.28-3.21-1.28-.436-1.107-1.066-1.402-1.066-1.402-.87-.595.066-.583.066-.583.96.068 1.465.986 1.465.986.854 1.464 2.24 1.04 2.784.795.087-.618.334-1.04.608-1.278-2.125-.24-4.36-1.062-4.36-4.73 0-.96.34-1.748.92-2.36-.09-.24-.4-1.12.08-2.32 0 0 .8-.258 2.62.978A9.15 9.15 0 0112 7.79c.795.004 1.59.108 2.34.316 1.82-1.236 2.62-.978 2.62-.978.48 1.2.17 2.08.08 2.32.58.612.92 1.4.92 2.36 0 3.678-2.235 4.49-4.36 4.73.344.295.65.877.65 1.77 0 1.278-.012 2.31-.012 2.62 0 .26.174.56.654.467C19.27 19.91 22 16.285 22 12c0-5.523-4.477-10-10-10z"
+                  fillRule="evenodd"
+                ></path>
+              </svg>
+            </a>
+            <a className="hover:text-primary" href="#">
+              <svg
+                aria-hidden="true"
+                className="w-6 h-6"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+              </svg>
+            </a>
+          </div>
+          <p className="mt-8 text-sm text-gray-500">
+            © 2024 Al Ameen Al Majali. All rights reserved.
+          </p>
+          <p className="text-sm text-gray-500">
+            Digital Transformation Expert in Real Estate | AI & Blockchain
+            Solutions
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
-
-export default Footer;

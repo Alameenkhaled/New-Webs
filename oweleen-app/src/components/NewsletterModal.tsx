@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 
-const NewsletterModal = ({ showModal, setShowModal }) => {
+const NewsletterModal = ({ showModal, setShowModal }: { showModal: boolean; setShowModal: (show: boolean) => void }) => {
   if (!showModal) {
     return null;
   }
